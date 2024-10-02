@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타임테이블</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6e3;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            background-color: #f26522;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .day h2 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .timeline {
+            margin-top: 10px;
+        }
+
+        .event {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .time {
+            font-weight: bold;
+        }
+
+        .description {
+            color: #999;
+        }
+
+        .day-two h2 {
+            color: #999;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon"></div>
+            <h1>타임테이블</h1>
+        </div>
+        <div class="day">
+            <h2>DAY 1</h2>
+            <p>19:00 입장</p>
+        </div>
+        <div class="timeline">
+            <div class="event">
+                <div class="time">20:00</div>
+                <div class="description">개회식</div>
+            </div>
+            <div class="event">
+                <div class="time">21:00</div>
+                <div class="description">1차 스프린트</div>
+            </div>
+            <div class="event">
+                <div class="time">23:00</div>
+                <div class="description">야식 및 이벤트 진행</div>
+            </div>
+            <div class="event">
+                <div class="time">00:00</div>
+                <div class="description">2차 스프린트</div>
+            </div>
+            <div class="event day-two">
+                <h2>DAY 2</h2>
+            </div>
+            <div class="event">
+                <div class="time">06:00</div>
+                <div class="description">제출 마감</div>
+            </div>
+            <div class="event">
+                <div class="time">06:20</div>
+                <div class="description">발표회</div>
+            </div>
+            <div class="event">
+                <div class="time">07:30</div>
+                <div class="description">심사 집계</div>
+            </div>
+            <div class="event">
+                <div class="time">08:00</div>
+                <div class="description">순위 발표 및 시상</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
