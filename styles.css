@@ -45,6 +45,12 @@ body {
   font-family: "SB AggroOTF";
 }
 
+.header-title img {
+  width: 84px;
+  height: 84px;
+  vertical-align: middle;
+}
+
 .header-title p {
   margin: 12px;
 }
@@ -86,11 +92,27 @@ main {
   color: var(--black);
 }
 
+.introduce-title {
+  color: #565656;
+  font-size: 25px;
+}
+
+.introduce-title img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 .introduce-content {
   color: var(--black);
   font-size: 70px;
   font-style: normal;
   font-weight: 600;
+  margin: 0;
+}
+
+.introduce-content p {
   margin: 0;
 }
 
