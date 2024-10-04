@@ -112,10 +112,19 @@ main {
   font-style: normal;
   font-weight: 600;
   margin: 0;
+  line-height: 140%;
 }
 
 .introduce-content p {
   margin: 0;
+}
+
+.rounded-text {
+  padding: 10px 52px;
+  border-radius: 60px;
+  background: #ff6737;
+  color: white;
+  margin-right: 20px;
 }
 
 #character {
@@ -211,6 +220,80 @@ tr:last-child td {
   margin: 30px 64px 0 64px;
 }
 
+#timetable {
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto 0;
+  padding: 56px;
+  width: 68%;
+  border-radius: 50px;
+  font-family: Pretendard;
+  background-color: white;
+}
+
+.timetable-title {
+  font-size: 25px;
+  color: #565656;
+}
+
+.timetable-title img {
+  width: 67px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.timetable-container {
+  margin: 0 auto;
+}
+
+#timeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 20px;
+  border-left: 2px solid var(--black); /* border-left를 2px로 변경 */
+  font-size: 30px;
+}
+
+#timeline li {
+  margin: 40px 0;
+  position: relative;
+}
+
+.date {
+  top: 50%;
+  left: -120px; /* 왼쪽 여백을 줄여 레이아웃을 맞춤 */
+  line-height: 20px;
+  position: absolute;
+}
+
+.circle {
+  top: 50%;
+  left: -28px;
+  width: 8px;
+  height: 8px;
+  background: #614d4d;
+  border: 5px solid #332c27;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.content {
+  padding: 50px 20px 0;
+  position: relative;
+}
+
+.content p {
+  max-height: 0;
+  color: transparent;
+  overflow: hidden;
+}
+
+label {
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+}
+
 footer {
   background: var(--black);
   position: relative; /* 기본 위치 설정 */
@@ -226,6 +309,15 @@ footer {
   font-size: 40px;
 }
 
+.footer-contact {
+  padding-top: 37px;
+  padding-left: 26%;
+  padding-right: 26%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
 footer p {
   margin: 0;
 }
@@ -236,4 +328,11 @@ hr {
   margin: 20px 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
 }
