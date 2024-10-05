@@ -13,20 +13,38 @@
         <div class="logo-container">
             <img src="logo.png" alt="Logo" class="logo">
         </div>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 160px; z-index: -1;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="160" viewBox="0 0 1440 160"
+                preserveAspectRatio="none" fill="none">
+                <path
+                    d="M1687 54.7104C1590.66 5.98878 1369.89 -75.036 1257.55 -9.36187C1117.12 72.7307 913.541 172.844 615.6 106.269C317.659 39.6935 -193.523 -73.4341 -302 -9.36187"
+                    stroke="white" stroke-width="64" />
+            </svg>
+        </div>
         <div class="header-title">
             <p>우리의 <img src="Rectangle.svg" alt="Rectangle"> <img src="Ellipse.svg" alt="Rectangle">,</p>
             <p>모두 여기로 <span style="color : #332C27">모여!</span></p>
         </div>
+
         <p class="header-subtitle">멋쟁이사자처럼 연합 해커톤에 모여!</p>
-        <div class="header-buttons">
-            <button class="btn gather">GATHER!</button>
-            <button class="btn hackathon">HACKATHON</button>
-            <button class="btn together">TOGETHER</button>
-            <button class="btn fun">FUN</button>
-            <button class="btn keepitup">KEEP IT UP!</button>
+        <div style="position: absolute; left: 0; width: 100%; height: 160px; z-index: -1;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="229" viewBox="0 0 1440 229" fill="none"
+                preserveAspectRatio="none">
+                <path
+                    d="M-282 122.258C-184.883 73.2356 37.6616 -8.28926 150.906 57.7902C292.462 140.39 497.681 241.12 798.019 174.134C1098.36 107.148 1613.65 -6.67757 1723 57.7902"
+                    stroke="#FF6737" stroke-width="64.526" />
+            </svg>
         </div>
-        <div style="text-align: center;">
-            <a href="#" class="apply-btn">지금 신청하기 <img src="Arrow.svg" alt="arrow"></a>
+        <div class="header-buttons">
+            <p class="btn-gather">GATHER!</p>
+            <p class="btn-hackathon">HACKATHON</p>
+            <p class="btn-together">TOGETHER</p>
+            <p class="btn-fun">FUN</p>
+            <p class="btn-keepitup">KEEP IT UP!</p>
+        </div>
+
+        <div class="apply-btn-container">
+            <a href="#" class="apply-btn1">지금 신청하기 <img src="Arrow.svg" alt="arrow"></a>
         </div>
     </header>
     <main>
@@ -59,22 +77,23 @@
                 <p>네모여의 친구들과 함께 <br> <span style="font-weight: 600;">모여톤</span>으로 모여요!</p>
             </div>
             <div class="card-container">
-                <div class="card">
-                    <p>네모여</p>
-                    <img src="네모여.png" alt="네모여">
-                </div>
-                <div class="card">
-                    <p>실력이</p>
-                    <img src="실력이.png" alt="실력이">
-                </div>
-                <div class="card">
-                    <p>아이디어</p>
-                    <img src="아이디어.png" alt="아이디어">
-                </div>
-                <div class="card">
-                    <p>사라미</p>
-                    <img src="사라미.png" alt="사라미">
-                </div>
+                <a class="card">
+                    <p class="card-name" style="color: #FF6737;">네모여</p>
+                    <img src="네모여.png" alt="네모여" width="168px" class="card-character">
+                </a>
+                <a class="card" style="background:#89BFFF;;">
+                    <p class="card-name" style="color: #89BFFF;">실력이</p>
+                    <img src="실력이.png" alt="실력이" width="209px" class="card-character">
+                </a>
+                <a class="card" style="background: #FFC6C3;">
+                    <p class="card-name" style="color: #FFC6C3;">아이디어</p>
+                    <img src="아이디어.png" alt="아이디어" width="207px" class="card-character">
+                </a>
+                <a class="card" style="background: #964C59;">
+                    <p class="card-name" style="color: #964C59;">사라미</p>
+                    <img src="사라미.png" alt="사라미" width="207px" class="card-character">
+                </a>
+
             </div>
         </section>
         <section id="schedule">
