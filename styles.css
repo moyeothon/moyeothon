@@ -43,6 +43,7 @@ body {
   color: var(--orange);
   text-align: center;
   font-family: "SB AggroOTF";
+  margin-top: 130px;
 }
 
 .header-title img {
@@ -68,7 +69,7 @@ body {
 .apply-btn {
   background-color: var(--black);
   color: white;
-  padding: 10px 20px;
+  padding: 23px 72px;
   border-radius: 60px;
   text-decoration: none;
   display: inline-flex;
@@ -88,10 +89,10 @@ main {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  font-size: 24px;
+  font-size: 22px;
   color: var(--black);
-  width: 53%;
-  margin: 0 auto;
+  width: 54%;
+  margin: 324px auto 0;
 }
 
 .introduce-title {
@@ -117,10 +118,11 @@ main {
 
 .introduce-content p {
   margin: 0;
+  margin-top: 9px;
 }
 
 .rounded-text {
-  padding: 10px 52px;
+  padding: 4px 52px;
   border-radius: 60px;
   background: #ff6737;
   color: white;
@@ -132,7 +134,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 352px;
 }
 
 .character-title {
@@ -161,11 +163,20 @@ main {
   background: var(--orange);
   border-radius: 38.35px;
   border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card img {
+  width: 200px;
 }
 
 #schedule {
   width: 58%;
-  margin: 0 auto;
+  margin: 242px auto 0;
   font-family: Pretendard;
 }
 
@@ -220,10 +231,14 @@ tr:last-child td {
   margin: 30px 64px 0 64px;
 }
 
+.notification-list li {
+  margin: 10px 0;
+}
+
 #timetable {
   display: flex;
   flex-direction: column;
-  margin: 32px auto 0;
+  margin: 106px auto 0;
   padding: 56px;
   width: 68%;
   border-radius: 50px;
@@ -242,20 +257,25 @@ tr:last-child td {
   vertical-align: middle;
 }
 
-.timetable-container {
-  margin: 0 auto;
+.timeline-container {
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
 }
 
 #timeline {
+  display: block;
   list-style: none;
-  margin: 50px 0 30px 120px;
-  padding-left: 20px;
+  margin: 0 auto;
+  margin-left: 40%;
+  padding-left: 19px;
   border-left: 2px solid var(--black); /* border-left를 2px로 변경 */
   font-size: 30px;
 }
 
 #timeline li {
-  margin: 40px 0;
+  margin: 68px 0;
   position: relative;
 }
 
@@ -277,21 +297,27 @@ tr:last-child td {
   position: absolute;
 }
 
-.content {
-  padding: 50px 20px 0;
-  position: relative;
+.event {
+  padding: 17px 20px 0;
 }
 
-.content p {
-  max-height: 0;
-  color: transparent;
-  overflow: hidden;
+.work {
 }
 
-label {
-  position: absolute;
-  z-index: 100;
-  top: 20px;
+.day {
+  /* display: inline-flex; */
+  padding: 15.012px 41.282px 9.382px 41.282px;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 46.912px;
+  border: 1.876px solid #000;
+  color: #332c27;
+  font-family: "SB AggroOTF";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 footer {
@@ -301,6 +327,7 @@ footer {
   width: 100%;
   color: white;
   font-family: Pretendard;
+  margin-top: 230px;
 }
 
 .footer-content {
@@ -309,25 +336,31 @@ footer {
   font-size: 40px;
 }
 
+.footer-apply {
+  padding: 0 26%;
+  margin-top: 132px;
+}
+
 .footer-contact {
-  padding-top: 37px;
-  padding-left: 26%;
-  padding-right: 26%;
+  /* padding-top: 37px; */
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 300px;
   font-size: 14px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 footer p {
-  margin: 0;
+  margin-top: 36px;
+  margin-right: 90px;
 }
 
 hr {
   border: 1px solid white; /* 라인의 두께와 색상 */
   width: 95%; /* 라인의 길이 */
-  margin: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
+  margin-top: 130px;
 }
 
 .copyright {
@@ -335,4 +368,10 @@ hr {
   font-family: Pretendard;
   font-style: normal;
   font-weight: 400;
+  margin-left: auto;
+  text-align: right;
+}
+
+.copyright p {
+  margin-right: 0;
 }
