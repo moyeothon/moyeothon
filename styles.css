@@ -30,6 +30,7 @@ body {
 
 #header {
   justify-content: center;
+  /* height: 100vh; */
 }
 
 .logo-container {
@@ -170,6 +171,9 @@ main {
   align-items: center;
   /* width: 54%; */
   margin: 324px auto 0;
+  padding: 80px;
+  border-radius: 80px;
+  background-color: #FFFFFF;
 }
 
 .introduce-title {
@@ -238,8 +242,10 @@ main {
 
 .card-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   overflow: hidden;
+  align-self: center;
+  width: 100%;
 }
 
 .card {
@@ -343,7 +349,7 @@ tr:last-child td {
   flex-direction: column;
   margin: 106px auto 0;
   padding: 56px;
-  width: 68%;
+  width: 50%;
   border-radius: 50px;
   font-family: Pretendard;
   background-color: white;
