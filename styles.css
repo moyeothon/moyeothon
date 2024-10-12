@@ -25,16 +25,29 @@ html {
 }
 
 /* 태블릿 크기에서의 font-size 조정 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 14px;
   }
 }
 
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  .header-buttons {
+    display: none !important;
+  }
+}
+
 /* 모바일 크기에서의 font-size 조정 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   html {
     font-size: 10px;
+  }
+
+  .cloud {
+    display: none;
   }
 }
 
@@ -61,7 +74,7 @@ body {
 }
 
 .header-title {
-  font-size: 5.25rem;
+  font-size: 4.5em;
   color: var(--orange);
   text-align: center;
   font-family: "SB AggroOTF";
@@ -69,8 +82,8 @@ body {
 }
 
 .header-title img {
-  width: 5.25rem;
-  height: 5.25rem;
+  width: 4.5rem;
+  height: 4.5rem;
   vertical-align: middle;
 }
 
@@ -87,6 +100,17 @@ body {
   font-weight: 600;
   line-height: normal;
   margin: 0;
+}
+
+.sponsors {
+  margin-top: 2.375rem;
+  padding: 0 2.5rem;
+}
+
+.sponsors img {
+  width: 5rem;
+  height: 100%;
+  margin: 1.375rem;
 }
 
 .header-buttons {
@@ -107,7 +131,7 @@ body {
   padding: 0.938rem 2.58rem 0.586rem 2.58rem;
   justify-content: center;
   align-items: center;
-  border-radius: 2.932rem;
+  border-radius: 46px;
   border: 0.117rem solid #000;
   background: #fff;
 }
@@ -150,11 +174,23 @@ body {
   margin-top: 13rem;
 }
 
+.arrow {
+  width: 2.125rem;
+  height: 2.125rem;
+  margin-left: 0.625rem;
+}
+
+.arrow2 {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-left: 0.625rem;
+}
+
 .apply-btn1 {
   background-color: var(--black);
   color: white;
   padding: 1.313rem 4.125rem;
-  border-radius: 2.75rem;
+  border-radius: 44px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -167,12 +203,12 @@ body {
   background-color: var(--black);
   color: white;
   padding: 1.438rem 4.5rem;
-  border-radius: 3.75rem;
+  border-radius: 60px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   font-family: Pretendard;
-  font-size: 2.125rem;
+  font-size: 1.125rem;
   font-weight: 800;
 }
 
@@ -193,19 +229,19 @@ main {
 
 .introduce-title {
   color: #565656;
-  font-size: 1.563rem;
+  font-size: 1.5rem;
 }
 
 .introduce-title img {
-  width: 1.563rem;
-  height: 1.563rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.625rem;
   vertical-align: middle;
 }
 
 .introduce-content {
   color: var(--black);
-  font-size: 4.375rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
   margin: 0;
@@ -214,12 +250,12 @@ main {
 
 .introduce-content p {
   margin: 0;
-  margin-top: 0.563rem;
+  margin-top: 0.5rem;
 }
 
 .rounded-text {
   padding: 0.25rem 3.25rem;
-  border-radius: 3.75rem;
+  border-radius: 60px;
   background: #ff6737;
   color: white;
   margin-right: 1.25rem;
@@ -268,11 +304,11 @@ main {
   width: 17.889rem;
   height: 23.111rem;
   background: var(--orange);
-  border-radius: 2.397rem;
+  border-radius: 18px;
   border: 0.125rem black solid;
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
+  margin: 1rem;
 }
 
 .card-name {
@@ -281,7 +317,7 @@ main {
   padding: 0.875rem 1.813rem 0.625rem 1.813rem;
   justify-content: center;
   align-items: center;
-  border-radius: 2.375rem;
+  border-radius: 38px;
   background: #fff;
   margin: 1rem;
 }
@@ -296,11 +332,14 @@ main {
 
 .card-character {
   margin: auto;
-  margin-bottom: 1rem;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 #schedule {
-  width: 58%;
+  width: 20.25rem;
+  min-width: 90%;
   margin: 15.125rem auto 0;
   font-family: Pretendard;
 }
@@ -319,10 +358,10 @@ main {
 
 .schedule-table {
   width: 100%;
-  border-radius: 2.42rem;
+  border-radius: 16px;
   border-collapse: collapse;
   overflow: hidden;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 tr {
@@ -331,7 +370,7 @@ tr {
 
 td {
   text-align: center;
-  padding: 0.625rem 1.25rem;
+  padding: 1.625rem 2.25rem;
   border-bottom: 0.194rem solid rgba(255, 255, 255, 0.3);
 }
 tr:last-child td {
@@ -340,7 +379,6 @@ tr:last-child td {
 .label {
   background-color: var(--orange);
   color: white;
-  font-weight: bold;
 }
 .value {
   background-color: var(--black);
@@ -366,7 +404,7 @@ tr:last-child td {
   margin: 6.625rem auto 0;
   padding: 3.5rem;
   width: 80%;
-  border-radius: 3.125rem;
+  border-radius: 50px;
   font-family: Pretendard;
   background-color: white;
 }
@@ -394,7 +432,7 @@ tr:last-child td {
   margin-left: 40%;
   padding-left: 1.188rem;
   border-left: 0.125rem solid var(--black);
-  font-size: 1.875rem;
+  font-size: 1.125rem;
 }
 
 #timeline li {
@@ -433,7 +471,7 @@ tr:last-child td {
   border: 0.117rem solid #000;
   color: #332c27;
   font-family: "SB AggroOTF";
-  font-size: 1.75rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -451,8 +489,8 @@ footer {
 
 .footer-content {
   padding-top: 4rem;
-  padding-left: 26%;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  margin-left: 10%;
 }
 
 .footer-apply {
@@ -461,8 +499,8 @@ footer {
 }
 
 .footer-contact {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 6.25rem;
   font-size: 0.875rem;
   display: flex;
